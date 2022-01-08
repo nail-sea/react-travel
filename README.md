@@ -43,4 +43,14 @@ Switch的使用，这属于 工具的具体使用范畴，跟工程化关系不�
 ## 6-6
 组件间的传值，本节提到三种，一种是 withRouter 高级组件包裹，之后本组件，就可以加载 history、match、location； 一种是 react-router-dom 的钩子函数 useHistory 、useMatch、useLocation，这时候，有没有发现一些事情？就是任何成熟的工具，都是有自己对一些功能的实现方式，不知道不代表它们不行，所以在选择工具上，没有优劣之分，只有使用者的强弱。三是 Link 标签，它是最佳方案
 
+## 7-2
+redux 的工作原理解读，react 只是一个 UI库，它甚至连框架都算不上，如果想要构成复杂应用，需要 redux,它可以看作是一个设计模式，应用里，最重要的就是设计模式和数据。store reducer action stateUI,通过微信朋友圈的例子，讲解了redux的实现原理。
+
+## 7-3
+这节开始讲解redux 如何继承。首先在 src 下，新建一个 redux 文件夹，用来处理 redux 的所有文件。redux 最重要的是 store ，所以第一步是新建 store，这需要安装依赖 npm install redux，createStore 函数，接受 reducer 作为参数，生成一个 store。 
+有了 store 就要新建 reducer。
+
+## 7-4
+一个简单的例子，中英文切换，使用 redux 管理。
+
 
