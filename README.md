@@ -59,4 +59,10 @@ i18n 插件的使用，原理简单，使用简单，直接拿来用即可。
 ## 7-8
 redux 重构和action拆分，说白了就是当项目功能业务多起来的时候，应该如何设计文件结构。本章已经趋向于最终项目结构形态。
 
+## 7-9
+这一节，新增了 react-redux  @types/react-redux 插件和翻译文件，这是第一个中间件。
+第二步是在 index.ts 文件部分，绑定store 在 Provider 上。
+第三步是connect（），高级组件的嵌套使用， mapStateToProps 、mapDispatchToProps 都是 connect的参数，里面涉及的 反向类型注入，ReturnType typeof mapStateToProps, 是个新知识。
+action 本质就是一个对象，包含type 和 payload，他可以看作是收集数据，dispatch 给 reducer， reducer 专门做数据处理。
+
 
